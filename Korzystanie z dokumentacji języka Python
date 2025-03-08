@@ -1,0 +1,43 @@
+1. Funkcja wbudowana: enumerate()
+
+Opis:
+- Funkcja enumerate() dodaje licznik do iterowalnego obiektu (np. listy, krotki). Zwraca obiekt enumerate, który generuje pary (indeks, wartość) dla każdego elementu iterowalnego obiektu.
+- Jest to przydatne, gdy potrzebujesz zarówno indeksu, jak i wartości elementu podczas iteracji.
+
+Przykład:
+
+lista = ['jabłko', 'banan', 'wiśnia']
+    for indeks, owoc in enumerate(lista):
+        print(f"Indeks: {indeks}, Owoc: {owoc}")
+
+Dokumentacja: https://docs.python.org/3/library/functions.html#enumerate
+
+2. Moduł z biblioteki standardowej: math
+
+Opis:
+- Moduł math zapewnia dostęp do funkcji matematycznych zdefiniowanych przez standard C.
+- Zawiera funkcje do obliczeń trygonometrycznych, logarytmicznych, potęgowych i wiele innych.
+- Jest to bardzo przydatny moduł do obliczeń matematycznych.
+
+Przykład:
+
+import math
+print(math.sqrt(16))  # Pierwiastek kwadratowy
+print(math.pi)  # Stała pi
+
+Dokumentacja: https://docs.python.org/3/library/math.html
+
+3. Wyjątek: ValueError
+
+Opis:
+- Wyjątek ValueError jest zgłaszany, gdy funkcja otrzymuje argument o poprawnym typie, ale nieprawidłowej wartości.
+- Na przykład, gdy próbujesz przekonwertować ciąg znaków na liczbę całkowitą, ale ciąg nie reprezentuje poprawnej liczby.
+
+Przykład:
+
+try:
+    int("abc")
+except ValueError:
+    print("Nieprawidłowa wartość!")
+
+Dokumentacja: https://docs.python.org/3/library/exceptions.html#ValueError
